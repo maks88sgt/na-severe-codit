@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 import {Provider} from 'react-redux';
 import './App.css';
-import {CssBaseline, ThemeProvider} from "@mui/material";
+import {CssBaseline, GlobalStyles, ThemeProvider} from "@mui/material";
 import {theme} from "./theme/theme";
 import {store} from "./store/store";
 import RouterProvider from "./router/RouterProvider";

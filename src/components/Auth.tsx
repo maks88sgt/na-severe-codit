@@ -7,6 +7,7 @@ import { useSignInMutation, useSignUpMutation } from '../store/auth/authApi';
 import { setUserData } from '../store/auth/authActions';
 import { useDispatch } from 'react-redux';
 import {useNavigate} from "react-router-dom";
+import AuroraBackground from "./AuroraBackground";
 
 
 export const Auth=() =>{
@@ -94,6 +95,7 @@ export const Auth=() =>{
 
     return (
         <Box>
+            <AuroraBackground>
                 <Header />
                 <FormControl
                     sx={{
@@ -201,6 +203,7 @@ export const Auth=() =>{
                     </Button>
                 </FormControl>
             <Footer />
+            </AuroraBackground>
         </Box>
     );
 }
